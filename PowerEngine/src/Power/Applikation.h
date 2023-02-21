@@ -13,5 +13,7 @@ namespace Power {
 
 		void Run();
 	};
+	
+	Applikation* CreateApplikation();
 
 }

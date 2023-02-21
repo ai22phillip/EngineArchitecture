@@ -17,7 +17,7 @@ namespace Power {
 		while (true);
 	}
 
-	Applikation* CreateApplikation();
+	
 	
 
 }
