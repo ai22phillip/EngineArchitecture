@@ -1,3 +1,7 @@
-﻿  Application.cpp
-C:\Users\Phil\source\repos\PowerEngine\Sandbox\src\Application.cpp(11,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  Sandbox.vcxproj -> C:\Users\Phil\source\repos\PowerEngine\bin\Debug-x64\Sandbox\Sandbox.exe
+﻿  SandboxApp.cpp
+C:\Users\Phil\source\repos\PowerEngine\PowerEngine\src\Power\EntryPoint.h(5,35): error C2039: 'CreateApplikation': is not a member of 'Power'
+C:\Users\Phil\source\repos\PowerEngine\PowerEngine\src\Power\Applikation.h(5): message : see declaration of 'Power'
+C:\Users\Phil\source\repos\PowerEngine\PowerEngine\src\Power\EntryPoint.h(10,20): error C2039: 'CreateApplikation': is not a member of 'Power'
+C:\Users\Phil\source\repos\PowerEngine\PowerEngine\src\Power\Applikation.h(5): message : see declaration of 'Power'
+C:\Users\Phil\source\repos\PowerEngine\Sandbox\src\SandboxApp.cpp(18,28): error C2039: 'CreateApplikation': is not a member of 'Power'
+C:\Users\Phil\source\repos\PowerEngine\PowerEngine\src\Power\Applikation.h(5): message : see declaration of 'Power'
