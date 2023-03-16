@@ -1,23 +1,29 @@
 #include "pwpch.h"
 #include "Applikation.h"
 #include "Log.h"
-#include "Events/ApplicationEvent.h"
-#include "Events/KeyEvent.h"
-#include "Events/MouseEvent.h"
-#include "Events/Event.h"
 #include "GLFW/glfw3.h"
 
 namespace Power {
 	
+#define BIND_EVENT_FN(x) std::bind(&Applikation::x, this, std::placeholders::_1)
+
 
 	Applikation::Applikation()
 	{
 	
 		m_Window = std::unique_ptr<Window>(Window::Create());
+		m_Window->SetEventCallback(BIND_EVENT_FN(Applikation::OnEvent));
 	}
 
 	Applikation::~Applikation()
 	{
+	}
+	void Applikation::OnEvent(Event& e)
+	{
+		EventDispatcher dispatcher(e);
+		dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(Applikation::OnWindowClose));
+
+		PW_CORE_TRACE("{0}", e);
 	}
 
 	void Applikation::Run() 
@@ -29,6 +35,12 @@ namespace Power {
 			m_Window->OnUpdate();
 		}
 		
+	}
+
+	bool Applikation::OnWindowClose(WindowCloseEvent& e)
+	{
+		m_Running = false;
+		return true;
 	}
 
 	
