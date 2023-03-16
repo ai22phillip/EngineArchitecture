@@ -7,6 +7,12 @@
     <Filter Include="Power\Events">
       <UniqueIdentifier>{D60DAB4E-C270-3AF3-6BF6-72A957380676}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Power\Platform">
+      <UniqueIdentifier>{C6E2C3C1-B2B0-B7C7-9B44-28EE87B1932C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Power\Platform\Windows">
+      <UniqueIdentifier>{00F3D24E-ECEC-FBA0-D559-92B1C1F2610D}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Power.h" />
@@ -34,6 +40,12 @@
     <ClInclude Include="src\Power\Log.h">
       <Filter>Power</Filter>
     </ClInclude>
+    <ClInclude Include="src\Power\Platform\Windows\WindowsWindow.h">
+      <Filter>Power\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Power\Window.h">
+      <Filter>Power</Filter>
+    </ClInclude>
     <ClInclude Include="src\pwpch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +54,9 @@
     </ClCompile>
     <ClCompile Include="src\Power\Log.cpp">
       <Filter>Power</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Power\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Power\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\pwpch.cpp" />
   </ItemGroup>
