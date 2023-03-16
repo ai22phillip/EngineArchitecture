@@ -26,6 +26,7 @@ project "PowerEngine"
 
 	includedirs
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 	
@@ -40,10 +41,7 @@ project "PowerEngine"
 			"PW_BUILD_DLL"
 		}
 		
-		postbuildcommands
-		{
-			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
-		}
+
 		
 	filter "configurations:Debug"
 		defines "PW_DEBUG"

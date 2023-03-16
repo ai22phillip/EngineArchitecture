@@ -1,12 +1,12 @@
 #pragma once
 
-#include <memory>
+
 
 #include "Core.h"
 #include "spdlog/spdlog.h"
 #include "spdlog/fmt/ostr.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
-
+#include <memory>
 
 namespace Power {
 
@@ -22,6 +22,7 @@ namespace Power {
 		static std::shared_ptr<spdlog::logger> s_CoreLogger;
 		static std::shared_ptr<spdlog::logger> s_ClientLogger;
 	};
+	
 
 	
 
