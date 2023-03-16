@@ -34,6 +34,7 @@
     <ClInclude Include="src\Power\Log.h">
       <Filter>Power</Filter>
     </ClInclude>
+    <ClInclude Include="src\pwpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Power\Applikation.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Power\Log.cpp">
       <Filter>Power</Filter>
     </ClCompile>
+    <ClCompile Include="src\pwpch.cpp" />
   </ItemGroup>
 </Project>

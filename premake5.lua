@@ -18,6 +18,9 @@ project "PowerEngine"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 	
+	pchheader "pwpch.h"
+	pchsource "Power/src/pwpch.cpp"
+	
 	files
 	{
 		"%{prj.name}/src/**.h",
